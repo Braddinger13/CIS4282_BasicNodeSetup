@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 
 //get all user api
 app.get("/api/listAllUsers", (req, res) => {
-  const sqlGet = "SELECT * FROM heroku_4875da0c9b91089.web_user;";
+  const sqlGet = "SELECT * FROM web_user;";
   db.query(sqlGet, (req, result) => {
     res.send(result);
   });
